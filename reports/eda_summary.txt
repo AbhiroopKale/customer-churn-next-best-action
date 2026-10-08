@@ -1,0 +1,15 @@
+EDA on training split: 5634 customers
+Overall churn rate: 26.5%  -> imbalanced, accuracy alone would mislead
+Contract: Month-to-month=42.7% (n=3102), One year=11.1% (n=1173), Two year=2.9% (n=1359)
+tenure_group: 0-6m=52.2% (n=1170), 7-12m=37.2% (n=567), 13-24m=28.6% (n=818), 25m+=14.3% (n=3079)
+Median MonthlyCharges  churned: 79.95 | stayed: 64.40
+charge_category: Low=10.6% (n=1383), Medium=30.9% (n=2840), High=33.4% (n=1411)
+PaymentMethod: Bank transfer (automatic)=16.2% (n=1244), Credit card (automatic)=14.9% (n=1213), Electronic check=45.7% (n=1891), Mailed check=19.3% (n=1286)
+InternetService: DSL=18.7% (n=1937), Fiber optic=42.1% (n=2483), No=7.2% (n=1214)
+gender: Female=26.6%, Male=26.4%
+SeniorCitizen: 0=23.7%, 1=41.1%
+Partner: No=32.8%, Yes=19.9%
+Dependents: No=31.4%, Yes=15.2%
+Add-on churn rate (subscribed vs not): OnlineSecurity=14.4% vs 41.9%, OnlineBackup=21.6% vs 40.1%, DeviceProtection=22.8% vs 39.0%, TechSupport=15.2% vs 41.8%, StreamingTV=30.5% vs 33.1%, StreamingMovies=30.0% vs 33.6%
+corr(TotalCharges, tenure) = 0.83  -> TotalCharges is largely a function of tenure x charges
+Distribution percentiles of MonthlyCharges (train): {0.25: 35.66, 0.5: 70.5, 0.75: 90.0}
