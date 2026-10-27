@@ -1,0 +1,121 @@
+{
+  "model_version": "v1-xgboost-20261027",
+  "model_name": "XGBoost",
+  "trained_at": "2026-10-27T16:15:22",
+  "decision_threshold": 0.32,
+  "test_metrics": {
+    "Accuracy": 0.7622,
+    "Precision": 0.5373,
+    "Recall": 0.7513,
+    "F1": 0.6265,
+    "ROC-AUC": 0.844,
+    "PR-AUC": 0.6612,
+    "Brier": 0.1355
+  },
+  "cv_pr_auc": 0.6644,
+  "selection_rule": "highest 5-fold CV PR-AUC on training data among deployable models; threshold = F1-optimal on out-of-fold training predictions",
+  "n_train": 5634,
+  "n_test": 1409,
+  "churn_rate_train": 0.2653532126375577,
+  "feature_ranges": {
+    "tenure": {
+      "min": 0.0,
+      "max": 72.0
+    },
+    "MonthlyCharges": {
+      "min": 18.4,
+      "max": 118.75
+    },
+    "TotalCharges": {
+      "min": 0.0,
+      "max": 8684.8
+    }
+  },
+  "categories": {
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "Partner": [
+      "No",
+      "Yes"
+    ],
+    "Dependents": [
+      "No",
+      "Yes"
+    ],
+    "PhoneService": [
+      "No",
+      "Yes"
+    ],
+    "MultipleLines": [
+      "No",
+      "No phone service",
+      "Yes"
+    ],
+    "InternetService": [
+      "DSL",
+      "Fiber optic",
+      "No"
+    ],
+    "OnlineSecurity": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "OnlineBackup": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "DeviceProtection": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "TechSupport": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingTV": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingMovies": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "Contract": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "PaperlessBilling": [
+      "No",
+      "Yes"
+    ],
+    "PaymentMethod": [
+      "Bank transfer (automatic)",
+      "Credit card (automatic)",
+      "Electronic check",
+      "Mailed check"
+    ],
+    "tenure_group": [
+      "0-6m",
+      "13-24m",
+      "25m+",
+      "7-12m"
+    ],
+    "charge_category": [
+      "High",
+      "Low",
+      "Medium"
+    ]
+  },
+  "ann_included": true,
+  "sklearn_version": "1.9.1",
+  "python_version": "3.12.6"
+}
